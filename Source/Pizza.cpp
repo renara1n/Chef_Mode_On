@@ -3,30 +3,30 @@
 Pizza::Pizza() : Food("Pizza") {
 
     addStep("Step 1",
-        { "Prepare dough", "Freeze cheese",
-          "Eat flour raw", "Skip dough" }, 0);
+        { "Prepare dough", "Cool cheese",
+          "Add sauce", "Skip dough" }, 0);
 
     addStep("Step 2",
-        { "Burn dough", "Let dough rise",
-          "Freeze dough instantly", "Eat raw yeast" }, 1);
+        { "Heat dough", "Let dough rise",
+          "Cut dough", "Freeze dough" }, 1);
 
     addStep("Step 3",
-        { "Freeze tomatoes", "Prepare sauce",
-          "Drink raw flour", "Skip sauce" }, 1);
+        { "Wash cheese", "Prepare sauce",
+          "Cut dough", "Skip sauce" }, 1);
 
     addStep("Step 4",
-        { "Fry dough", "Eat dough raw",
-          "Freeze plate", "Spread dough" }, 3);
+        { "Heat tray", "Check dough",
+          "Cool plate", "Spread dough" }, 3);
 
     addStep("Step 5",
-        { "Burn toppings", "Remove dough",
-          "Add sauce and toppings", "Freeze pizza" }, 2);
+        { "Add cheese", "Remove dough",
+          "Add sauce and toppings", "Cool pizza" }, 2);
 
     addStep("Step 6",
-        { "Freeze oven", "Bake pizza",
-          "Eat raw dough", "Fry pizza" }, 1);
+        { "Cool oven", "Bake pizza",
+          "Cut dough", "Wash tray" }, 1);
 
     addStep("Step 7",
-        { "Burn slice", "Slice and serve",
-          "Freeze pizza forever", "Re-bake endlessly" }, 1);
+        { "Heat slice", "Slice and serve",
+          "Cool pizza", "Bake again" }, 1);
 }

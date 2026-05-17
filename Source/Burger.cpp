@@ -3,12 +3,12 @@
 Burger::Burger() : Food("Burger") {
 
     addStep("Step 1",
-        { "Burn buns", "Eat raw bread dough",
-          "Freeze beef", "Prepare buns" }, 3);
+        { "Wash lettuce", "Prepare patty",
+          "Freeze buns", "Burn cheese" }, 1);
 
     addStep("Step 2",
-        { "Freeze buns", "Shape patty",
-          "Skip patty", "Drink meat juice" }, 1);
+        { "Boil ketchup", "Season patty",
+          "Freeze grill", "Eat raw bun" }, 1);
 
     addStep("Step 3",
         { "Burn cheese", "Eat raw salt",

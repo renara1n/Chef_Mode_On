@@ -3,30 +3,30 @@
 Fries::Fries() : Food("Fries") {
 
     addStep("Step 1",
-        { "Freeze oil", "Eat raw potatoes",
-          "Burn potatoes", "Wash potatoes" }, 3);
+        { "Heat oil", "Cut potatoes",
+          "Add salt", "Wash potatoes" }, 3);
 
     addStep("Step 2",
-        { "Drink water", "Peel potatoes",
-          "Freeze knife", "Skip peeling" }, 1);
+        { "Boil water", "Peel potatoes",
+          "Wash knife", "Leave skin" }, 1);
 
     addStep("Step 3",
-        { "Burn knife", "Mash raw meat",
-          "Freeze potatoes whole", "Cut into strips" }, 3);
+        { "Dry potatoes", "Heat pan",
+          "Keep whole", "Cut into strips" }, 3);
 
     addStep("Step 4",
-        { "Fry raw", "Soak in water",
-          "Burn water", "Skip soaking" }, 1);
+        { "Fry now", "Soak in water",
+          "Add oil", "Skip soak" }, 1);
 
     addStep("Step 5",
-        { "Freeze wet potatoes", "Boil oil",
-          "Dry potatoes", "Eat soaked potatoes" }, 2);
+        { "Cool potatoes", "Heat oil",
+          "Dry potatoes", "Serve wet" }, 2);
 
     addStep("Step 6",
-        { "Bake cheese", "Deep fry potatoes",
-          "Freeze fries", "Eat raw oil" }, 1);
+        { "Add cheese", "Deep fry potatoes",
+          "Freeze fries", "Wash fries" }, 1);
 
     addStep("Step 7",
-        { "Re-fry forever", "Season and serve",
-          "Freeze seasoning", "Burn fries" }, 1);
+        { "Cook again", "Season and serve",
+          "Cool fries", "Burn fries" }, 1);
 }
