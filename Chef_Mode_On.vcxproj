@@ -135,6 +135,7 @@
     <ClCompile Include="source\Pizza.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="doctest.h" />
     <ClInclude Include="header\Burger.h" />
     <ClInclude Include="header\Customer.h" />
     <ClInclude Include="header\Food.h" />
