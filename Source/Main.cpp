@@ -145,15 +145,27 @@ int main() {
     // ===== LEVEL 2 =====
     if (gameRunning && currentLevel == 2) {
         Order* level2Order = createLevel2(menu, orderIdCounter);
-        processLevel(level2Order, 2);
+        GameSession session2(level2Order);
+        displayOrderHierarchy(level2Order);
+        std::cout << "[SYSTEM]: Chef, the orders are in! Starting the kitchen...\n" << std::endl;
+        session2.processHierarchicalOrder();
 
-        char choice = displayLevelCompleteMenu(2);
-        if (choice == '1') {
-            std::cout << "\n[SYSTEM]: Excellent! Starting Level 3...\n" << std::endl;
-            currentLevel = 3;
-        } else {
-            std::cout << "\n[SYSTEM]: Thanks for playing Chef Mode On!\n" << std::endl;
+        if (session2.checkFailure()) {
+            std::cout << "\n========================================" << std::endl;
+            std::cout << "           GAME OVER!                   " << std::endl;
+            std::cout << "========================================" << std::endl;
+            std::cout << "[SYSTEM]: You ran out of points!\n" << std::endl;
+            std::cout << "[SYSTEM]: Thanks for playing Chef Mode On!\n" << std::endl;
             gameRunning = false;
+        } else {
+            char choice = displayLevelCompleteMenu(2);
+            if (choice == '1') {
+                std::cout << "\n[SYSTEM]: Excellent! Starting Level 3...\n" << std::endl;
+                currentLevel = 3;
+            } else {
+                std::cout << "\n[SYSTEM]: Thanks for playing Chef Mode On!\n" << std::endl;
+                gameRunning = false;
+            }
         }
 
         delete level2Order;
